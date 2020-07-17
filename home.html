@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bit-Sketch</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <header>
+        <p>Bit-Sketch</p>
+      </header>
+
+      <main>
+        <aside class="toolbox">
+          <div class="brush-color">
+            <div id="color-box">
+              <input type="color" id="color-box" />
+            </div>
+            <span>Brush Color</span>
+          </div>
+
+          <div class="bg-color">
+            <input type="color" id="bg-color-box" value="#FFF" />
+            <span>Background Color</span>
+          </div>
+
+          <button id="paint-bucket">Paint Bucket</button>
+          <button id="color-picker">Color Picker</button>
+          <button id="eraser">Eraser</button>
+          <button id="lighten">Lighten</button>
+          <button id="darken">Darken</button>
+
+          <div class="grid-size">
+            <input type="range" id="grid-slider" min="8" max="64 value=" 32 />
+          </div>
+
+          <button id="grid-lines">Toggle Grid Lines</button>
+          <button id="clear">Clear</button>
+        </aside>
+        <div class="container" draggable="false"></div>
+      </main>
+    </section>
+
+    <script src="js/home.js"></script>
+    <footer></footer>
+  </body>
+</html>
