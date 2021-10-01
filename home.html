@@ -2,49 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bit-Sketch</title>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="wrapper">
-      <header>
-        <p>Bit-Sketch</p>
-      </header>
+    <div class="wrapper">
+      <section>BIT SKETCH</section>
+      <section>
+        <aside>
+          <div class="tool">
+            <div class="brush"></div>
+          </div>
 
-      <main>
-        <aside class="toolbox">
-          <div class="brush-color">
-            <div id="color-box">
-              <input type="color" id="color-box" />
+          <div class="tool">
+            <div class="color-bucket"></div>
+          </div>
+
+          <div class="tool">
+            <div class="eraser"></div>
+          </div>
+
+          <div class="tool">
+            <div class="color-selector">
+              <div class="fg-color"></div>
+              <div class="bg-color"></div>
             </div>
-            <span>Brush Color</span>
           </div>
 
-          <div class="bg-color">
-            <input type="color" id="bg-color-box" value="#FFF" />
-            <span>Background Color</span>
+          <div class="tool">
+            <div class="color-picker"></div>
           </div>
 
-          <button id="paint-bucket">Paint Bucket</button>
-          <button id="color-picker">Color Picker</button>
-          <button id="eraser">Eraser</button>
-          <button id="lighten">Lighten</button>
-          <button id="darken">Darken</button>
-
-          <div class="grid-size">
-            <input type="range" id="grid-slider" min="8" max="64 value=" 32 />
+          <div class="tool">
+            <div class="color-darken"></div>
           </div>
 
-          <button id="grid-lines">Toggle Grid Lines</button>
-          <button id="clear">Clear</button>
+          <div class="tool">
+            <div class="color-lighten"></div>
+          </div>
+
+          <div class="tool">
+            <div class="grid-resize"></div>
+          </div>
+
+          <div class="tool">
+            <div class="grid-reset"></div>
+          </div>
+
+          <div class="tool">
+            <div class="art-download"></div>
+          </div>
         </aside>
-        <div class="container" draggable="false"></div>
-      </main>
-    </section>
-
-    <script src="js/home.js"></script>
-    <footer></footer>
+      </section>
+      <section>
+        <main>
+          <div class="grid-wrapper">
+            <div class="grid"></div>
+          </div>
+        </main>
+      </section>
+    </div>
   </body>
 </html>
